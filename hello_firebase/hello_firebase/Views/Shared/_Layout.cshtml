@@ -4,22 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Firebase</title>
-    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <link href="~/Content/style.css" rel="stylesheet" />
 </head>
 <body>
     @Scripts.Render("~/bundles/jquery")
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDICNaiXh4TGGVcZBdBB0vtx3zjtWqEFqY",
-            authDomain: "hello-word-f2491.firebaseapp.com",
-            databaseURL: "https://hello-word-f2491.firebaseio.com",
-            projectId: "hello-word-f2491",
-            storageBucket: "hello-word-f2491.appspot.com",
-            messagingSenderId: "951703688718"
-        };
-        firebase.initializeApp(config);
-    </script>
     <div class="container body-content">
         @RenderBody()
         <hr />
